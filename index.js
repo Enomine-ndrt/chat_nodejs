@@ -20,7 +20,7 @@ app.get("/",(req,res)=>{
     res.send("Hello");
 });
 
-const port = 5000;
-server.listen(port,()=>{
-    console.log(`Listen on port ${port}`);
+//const port = 5000;
+server.listen(process.env.PORT,'0.0.0.0',()=>{
+    console.log(`Listen on port ${process.env.PORT}`);
 });
