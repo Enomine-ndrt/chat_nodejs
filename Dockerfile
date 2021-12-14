@@ -9,7 +9,7 @@ RUN npm install
 #Copiar los demas archivos de la node app
 COPY . .
 #el puerto que se va a exponer
-EXPOSE 8080
+EXPOSE 5000
 #Run app
 CMD ["npm","start"]
 
