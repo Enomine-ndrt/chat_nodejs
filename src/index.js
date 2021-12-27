@@ -1,6 +1,7 @@
+
 /**
  * ws
- * @component
+ *
  * @param {Function} connection - Establece conexion con websocket
  */
 const express = require("express");
@@ -41,8 +42,9 @@ app.get("/", (req, res) => {
 
 /**
  * Sever listen
+ * 
  * @param {number} process.env.PORT - puerto usado
  */
-server.listen(process.env.PORT || 3000, "0.0.0.0", () => {
-  console.log(`Listen on port ${process.env.PORT || 3000}`);
+server.listen(process.env.PORT || 5000, "0.0.0.0", () => {
+  console.log(`Listen on port ${process.env.PORT || 5000}`);
 });
