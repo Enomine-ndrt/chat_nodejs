@@ -1,29 +1,32 @@
 {
-  "source":{
-    "include":["./src"],
+  "source": {
+    "include": [
+      "./src"
+    ],
     "includePattern": ".+\\.js(doc|x)?$",
     "exclude": "node_modules/|docs"
   },
- "tags": {
+  "tags": {
     "allowUnknownTags": true,
-    "dictionaries": ["jsdoc","closure"]
-},
-
-"plugins": [
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "plugins": [
     "node_modules/better-docs/typescript"
-],
-"typescript": {
+  ],
+  "typescript": {
     "moduleRoot": "test"
-},
- "templates": {
-  "better-docs": {
+  },
+  "templates": {
+    "better-docs": {
       "name": "My React components"
     }
-},
-"opts": {
+  },
+  "opts": {
     "template": "node_modules/better-docs",
     "destination": "docs/",
     "recurse": true
-}
-
   }
+}
