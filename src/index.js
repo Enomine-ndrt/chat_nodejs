@@ -46,12 +46,7 @@ wss.on("connection", function connection(ws) {
          * @function
          * @param {string} message  mensaje obtenido
          */
-        if(!binary){
-          client.send(message.toString());
-        }else{
-          client.send("binario");
-        }
-        
+          client.send(message.toString());  
       }
     });
   });
